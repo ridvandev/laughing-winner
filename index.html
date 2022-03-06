@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://app.testresult.dev/test-result/3ymsmgorz -->
+<html lang="en" translate="no">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="google" content="notranslate">
+  <meta version="1.4.3">
+  <!--<base href="/">-->
+  <base href=".">
+  <link rel="stylesheet" type="text/css" href="./source/TestResult.ef7a3a71.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+  <style type="text/css">
+    .H_l_right .venues-ui__drawings .trigger.button--active .arrow {
+      transform: rotate(90deg);
+    }
+
+    .H_l_right .venues-ui__drawings .drawings {
+      right: 45px;
+      left: initial;
+    }
+  </style>
+  <style type="text/css">
+    .venues-ui * {
+      font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, sans-serif;
+      color: #0F1621;
+    }
+
+    .venues-ui .arrow {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .venues-ui .arrow--up {
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='13px' height='9px' viewBox='0 0 13 9' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='VenueMap_Facilities_Detail' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Floorplan-Switcher' transform='translate(-426.000000, -584.000000)' fill='%23383C45'%3E%3Cg id='Map-Controls-Copy' transform='translate(417.753906, 572.000000)'%3E%3Cg id='Chevron,-Dark' transform='translate(15.000000, 16.499023) rotate(-180.000000) translate(-15.000000, -16.499023) translate(9.000000, 12.749023)'%3E%3Cpath d='M6.0105,7.5 L4.1895,5.76404817 L0.1695,1.90510321 C0.057,1.79759174 0,1.68291284 0,1.56106651 C0,1.44065367 0.057,1.32597477 0.1695,1.2184633 L1.2465,0.16771789 C1.347,0.0587729358 1.47,0.00430045872 1.617,0.00430045872 C1.764,0.00430045872 1.887,0.0587729358 1.986,0.166284404 L6.009,3.98365826 L10.023,0.161983945 C10.122,0.0530389908 10.236,0 10.3695,0 C10.503,0 10.62,0.0530389908 10.7205,0.161983945 L11.841,1.21129587 C12.0525,1.43922018 12.0525,1.67144495 11.8425,1.89793578 L7.827,5.76118119 L6.0105,7.5 Z' id='Fill-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .venues-ui .arrow--down {
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='13px' height='9px' viewBox='0 0 13 9' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='VenueMap_Facilities_Detail' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='Floorplan-Switcher' transform='translate(-347.000000, -704.000000)' fill='%23383C45'%3E%3Cg id='Map-Controls' transform='translate(338.251953, 572.000000)'%3E%3Cg id='Chevron,-Dark' transform='translate(9.000000, 132.746094)'%3E%3Cpath d='M6.0105,7.5 L4.1895,5.76404817 L0.1695,1.90510321 C0.057,1.79759174 0,1.68291284 0,1.56106651 C0,1.44065367 0.057,1.32597477 0.1695,1.2184633 L1.2465,0.16771789 C1.347,0.0587729358 1.47,0.00430045872 1.617,0.00430045872 C1.764,0.00430045872 1.887,0.0587729358 1.986,0.166284404 L6.009,3.98365826 L10.023,0.161983945 C10.122,0.0530389908 10.236,0 10.3695,0 C10.503,0 10.62,0.0530389908 10.7205,0.161983945 L11.841,1.21129587 C12.0525,1.43922018 12.0525,1.67144495 11.8425,1.89793578 L7.827,5.76118119 L6.0105,7.5 Z' id='Fill-3'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    .venues-ui .venues-ui-button {
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #fff;
+      border: none;
+      border-bottom: 1px solid #9FA2A6;
+      cursor: pointer;
+      overflow: hidden;
+      color: #6e737a;
+      text-align: center;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .venues-ui .venues-ui-button:hover,
+    .venues-ui .venues-ui-button--active {
+      background-color: #f0f0f0;
+      color: #0F1621;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .venues-ui__drawings .drawings {
+      position: absolute;
+      top: 0;
+      right: 45px;
+      display: none;
+      opacity: 0;
+      border-radius: 5px;
+      box-shadow: 0 0 0.4em 0 rgba(15, 22, 33, 0.6);
+    }
+
+    .venues-ui__drawings .drawings--open {
+      display: block;
+      opacity: 1;
+      animation: fade 1s;
+    }
+
+    .venues-ui__drawings .drawings .venues-ui-button {
+      width: auto;
+      padding: 0 10px;
+    }
+
+    .venues-ui__drawings .drawings .venues-ui-button:first-of-type {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .venues-ui__drawings .drawings .venues-ui-button:last-of-type {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .venues-ui__drawings .trigger {
+      border-radius: 5px;
+      box-shadow: 0 0 0.4em 0 rgba(15, 22, 33, 0.6);
+    }
+
+    .venues-ui__drawings .trigger .arrow {
+      transform: rotate(0);
+      transition: 0.4s;
+    }
+
+    .venues-ui__drawings .trigger.venues-ui-button--active .arrow {
+      transform: rotate(90deg);
+      transition: 0.4s;
+    }
+
+    .venues-ui__levels {
+      border-radius: 5px;
+      box-shadow: 0 0 0.4em 0 rgba(15, 22, 33, 0.6);
+    }
+
+    .venues-ui__levels .levels {
+      overflow: hidden;
+    }
+
+    .venues-ui__levels .venues-ui-button--up+.levels .venues-ui-button {
+      border-radius: 0;
+    }
+
+    .venues-ui__levels .venues-ui-button:first-of-type {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+
+    .venues-ui__levels .venues-ui-button:last-of-type {
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .venues-ui__levels .venues-ui-button[disabled=disabled] .arrow {
+      opacity: 0.5;
+    }
+
+    .venues-ui__directory {
+      position: absolute;
+      top: 10px;
+      right: 60px;
+      bottom: calc(100% - 45px);
+      width: 350px;
+      overflow: hidden;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 0 0.4em 0 rgba(15, 22, 33, 0.6);
+    }
+
+    .venues-ui__directory.active {
+      bottom: 10px;
+    }
+
+    .venues-ui__directory .directory__list {
+      top: 80px;
+      bottom: 20px;
+      position: absolute;
+      overflow-y: scroll;
+      right: 10px;
+      left: 10px;
+      font-size: 12px;
+    }
+
+    .venues-ui__directory .directory__list svg {
+      width: 25px;
+      height: 25px;
+    }
+
+    .venues-ui__directory .directory__heading {
+      margin: 8px;
+      font-size: 15px;
+      font-weight: normal;
+      cursor: pointer;
+    }
+
+    .venues-ui__directory .directory__input {
+      margin: 10px;
+    }
+
+    .venues-ui__directory .directory__input input {
+      width: 100%;
+      padding: 5px 0;
+    }
+
+    .venues-ui__directory .directory__trigger {
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      width: 10px;
+      height: 10px;
+    }
+
+    .venues-ui__directory .directory__trigger .arrow {
+      transform: rotate(0);
+      transition: 0.4s;
+    }
+
+    .venues-ui__directory .directory__trigger--active .arrow {
+      transform: rotate(-180deg);
+      transition: 0.4s;
+    }
+  </style>
+</head>
+
+<body>
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <title>TestAkis | Test-Management-System</title>
+  <link href="./source/app.99c612d9.css" rel="preload" as="style">
+  <link href="./source/app.99c612d9.css" rel="stylesheet">
+  <meta name="theme-color" content="#4DBA87">
+  <meta name="apple-mobile-web-app-capable" content="no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="test-result-app">
+  <meta name="msapplication-TileImage" content="/img/icons/msapplication-icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#000000"><noscript><strong>We're sorry but test-result-app doesn't work
+      properly without JavaScript enabled. Please enable it to continue using test-result.</strong></noscript>
+  <div>
+    <div class="app">
+      <div class="min-h-screen bg-gray-100">
+        <!---->
+        <div class="min-h-screen z-20 w-full hidden"></div>
+        <!---->
+        <div class="min-h-screen z-20 w-full isVerified noblur" style="filter: blur(0.5rem);">
+          <div class="bg-green-100 bg-red-200 isVerified noblur">
+            <div class="border-b border-opacity-25 lg:border-none border-green-700 border-red-700">
+              <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
+                <div
+                  class="relative py-3 justify-between lg:border-b lg:border-opacity-25 lg:border-green-700 lg:border-red-700">
+                  <div class="px-2">
+                    <div class="text-green-700 flex"><svg fill="#059669" viewBox="0 0 35 32"
+                        xmlns="http://www.w3.org/2000/svg" class="block mx-auto h-8 w-8">
+                        <path
+                          d="M15.258 26.865a4.043 4.043 0 01-1.133 2.917A4.006 4.006 0 0111.253 31a3.992 3.992 0 01-2.872-1.218 4.028 4.028 0 01-1.133-2.917c.009-.698.2-1.382.557-1.981.356-.6.863-1.094 1.47-1.433-.024.109.09-.055 0 0l1.86-1.652a8.495 8.495 0 002.304-5.793c0-2.926-1.711-5.901-4.17-7.457.094.055-.036-.094 0 0A3.952 3.952 0 017.8 7.116a3.975 3.975 0 01-.557-1.98 4.042 4.042 0 011.133-2.918A4.006 4.006 0 0111.247 1a3.99 3.99 0 012.872 1.218 4.025 4.025 0 011.133 2.917 8.521 8.521 0 002.347 5.832l.817.8c.326.285.668.551 1.024.798.621.33 1.142.826 1.504 1.431a3.902 3.902 0 01-1.504 5.442c.033-.067-.063.036 0 0a8.968 8.968 0 00-3.024 3.183 9.016 9.016 0 00-1.158 4.244zM19.741 5.123c0 .796.235 1.575.676 2.237a4.01 4.01 0 001.798 1.482 3.99 3.99 0 004.366-.873 4.042 4.042 0 00.869-4.386 4.02 4.02 0 00-1.476-1.806 3.994 3.994 0 00-5.058.501 4.038 4.038 0 00-1.175 2.845zM23.748 22.84c-.792 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.806 4.042 4.042 0 00.869 4.387 3.99 3.99 0 004.366.873A4.01 4.01 0 0027.08 29.1a4.039 4.039 0 00-.5-5.082 4 4 0 00-2.832-1.18zM34 15.994c0-.796-.235-1.574-.675-2.236a4.01 4.01 0 00-1.798-1.483 3.99 3.99 0 00-4.367.873 4.042 4.042 0 00-.869 4.387 4.02 4.02 0 001.476 1.806 3.993 3.993 0 002.226.678 4.003 4.003 0 002.832-1.18A4.04 4.04 0 0034 15.993z M5.007 11.969c-.793 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.807 4.042 4.042 0 00.869 4.386 4.001 4.001 0 004.366.873 4.011 4.011 0 001.798-1.483 4.038 4.038 0 00-.5-5.08 4.004 4.004 0 00-2.831-1.181z">
+                        </path>
+                      </svg><svg fill="#C84141" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg"
+                        class="block mx-auto h-8 w-8" style="display: none;">
+                        <path
+                          d="M15.258 26.865a4.043 4.043 0 01-1.133 2.917A4.006 4.006 0 0111.253 31a3.992 3.992 0 01-2.872-1.218 4.028 4.028 0 01-1.133-2.917c.009-.698.2-1.382.557-1.981.356-.6.863-1.094 1.47-1.433-.024.109.09-.055 0 0l1.86-1.652a8.495 8.495 0 002.304-5.793c0-2.926-1.711-5.901-4.17-7.457.094.055-.036-.094 0 0A3.952 3.952 0 017.8 7.116a3.975 3.975 0 01-.557-1.98 4.042 4.042 0 011.133-2.918A4.006 4.006 0 0111.247 1a3.99 3.99 0 012.872 1.218 4.025 4.025 0 011.133 2.917 8.521 8.521 0 002.347 5.832l.817.8c.326.285.668.551 1.024.798.621.33 1.142.826 1.504 1.431a3.902 3.902 0 01-1.504 5.442c.033-.067-.063.036 0 0a8.968 8.968 0 00-3.024 3.183 9.016 9.016 0 00-1.158 4.244zM19.741 5.123c0 .796.235 1.575.676 2.237a4.01 4.01 0 001.798 1.482 3.99 3.99 0 004.366-.873 4.042 4.042 0 00.869-4.386 4.02 4.02 0 00-1.476-1.806 3.994 3.994 0 00-5.058.501 4.038 4.038 0 00-1.175 2.845zM23.748 22.84c-.792 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.806 4.042 4.042 0 00.869 4.387 3.99 3.99 0 004.366.873A4.01 4.01 0 0027.08 29.1a4.039 4.039 0 00-.5-5.082 4 4 0 00-2.832-1.18zM34 15.994c0-.796-.235-1.574-.675-2.236a4.01 4.01 0 00-1.798-1.483 3.99 3.99 0 00-4.367.873 4.042 4.042 0 00-.869 4.387 4.02 4.02 0 001.476 1.806 3.993 3.993 0 002.226.678 4.003 4.003 0 002.832-1.18A4.04 4.04 0 0034 15.993z M5.007 11.969c-.793 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.807 4.042 4.042 0 00.869 4.386 4.001 4.001 0 004.366.873 4.011 4.011 0 001.798-1.483 4.038 4.038 0 00-.5-5.08 4.004 4.004 0 00-2.831-1.181z">
+                        </path>
+                      </svg><svg fill="#888" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg"
+                        class="block mx-auto h-8 w-8" style="display: none;">
+                        <path
+                          d="M15.258 26.865a4.043 4.043 0 01-1.133 2.917A4.006 4.006 0 0111.253 31a3.992 3.992 0 01-2.872-1.218 4.028 4.028 0 01-1.133-2.917c.009-.698.2-1.382.557-1.981.356-.6.863-1.094 1.47-1.433-.024.109.09-.055 0 0l1.86-1.652a8.495 8.495 0 002.304-5.793c0-2.926-1.711-5.901-4.17-7.457.094.055-.036-.094 0 0A3.952 3.952 0 017.8 7.116a3.975 3.975 0 01-.557-1.98 4.042 4.042 0 011.133-2.918A4.006 4.006 0 0111.247 1a3.99 3.99 0 012.872 1.218 4.025 4.025 0 011.133 2.917 8.521 8.521 0 002.347 5.832l.817.8c.326.285.668.551 1.024.798.621.33 1.142.826 1.504 1.431a3.902 3.902 0 01-1.504 5.442c.033-.067-.063.036 0 0a8.968 8.968 0 00-3.024 3.183 9.016 9.016 0 00-1.158 4.244zM19.741 5.123c0 .796.235 1.575.676 2.237a4.01 4.01 0 001.798 1.482 3.99 3.99 0 004.366-.873 4.042 4.042 0 00.869-4.386 4.02 4.02 0 00-1.476-1.806 3.994 3.994 0 00-5.058.501 4.038 4.038 0 00-1.175 2.845zM23.748 22.84c-.792 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.806 4.042 4.042 0 00.869 4.387 3.99 3.99 0 004.366.873A4.01 4.01 0 0027.08 29.1a4.039 4.039 0 00-.5-5.082 4 4 0 00-2.832-1.18zM34 15.994c0-.796-.235-1.574-.675-2.236a4.01 4.01 0 00-1.798-1.483 3.99 3.99 0 00-4.367.873 4.042 4.042 0 00-.869 4.387 4.02 4.02 0 001.476 1.806 3.993 3.993 0 002.226.678 4.003 4.003 0 002.832-1.18A4.04 4.04 0 0034 15.993z M5.007 11.969c-.793 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.807 4.042 4.042 0 00.869 4.386 4.001 4.001 0 004.366.873 4.011 4.011 0 001.798-1.483 4.038 4.038 0 00-.5-5.08 4.004 4.004 0 00-2.831-1.181z">
+                        </path>
+                      </svg>
+                      <div class="absolute right-0">
+                        <div
+                          class="inline-block items-center pl-4 py-2 pr-0 text-base font-medium rounded-md rounded-l-none text-indigo-600 relative">
+                          <div><button class="rounded-full flex items-center focus:outline-none text-indigo-600"><span
+                                class="sr-only">Open options</span><span title="us"
+                                class="flag-icon rounded-full mr-2 flag-icon-squared flag-icon-us"></span> Eng <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="24px"
+                                height="24px" class="ml-2 w-5 h-5">
+                                <path fill-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                              </svg></button></div>
+                          <!---->
+                        </div>
+                      </div><svg fill="#483ECC" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg"
+                        class="block mx-auto h-8 w-8" style="display: none;">
+                        <path
+                          d="M15.258 26.865a4.043 4.043 0 01-1.133 2.917A4.006 4.006 0 0111.253 31a3.992 3.992 0 01-2.872-1.218 4.028 4.028 0 01-1.133-2.917c.009-.698.2-1.382.557-1.981.356-.6.863-1.094 1.47-1.433-.024.109.09-.055 0 0l1.86-1.652a8.495 8.495 0 002.304-5.793c0-2.926-1.711-5.901-4.17-7.457.094.055-.036-.094 0 0A3.952 3.952 0 017.8 7.116a3.975 3.975 0 01-.557-1.98 4.042 4.042 0 011.133-2.918A4.006 4.006 0 0111.247 1a3.99 3.99 0 012.872 1.218 4.025 4.025 0 011.133 2.917 8.521 8.521 0 002.347 5.832l.817.8c.326.285.668.551 1.024.798.621.33 1.142.826 1.504 1.431a3.902 3.902 0 01-1.504 5.442c.033-.067-.063.036 0 0a8.968 8.968 0 00-3.024 3.183 9.016 9.016 0 00-1.158 4.244zM19.741 5.123c0 .796.235 1.575.676 2.237a4.01 4.01 0 001.798 1.482 3.99 3.99 0 004.366-.873 4.042 4.042 0 00.869-4.386 4.02 4.02 0 00-1.476-1.806 3.994 3.994 0 00-5.058.501 4.038 4.038 0 00-1.175 2.845zM23.748 22.84c-.792 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.806 4.042 4.042 0 00.869 4.387 3.99 3.99 0 004.366.873A4.01 4.01 0 0027.08 29.1a4.039 4.039 0 00-.5-5.082 4 4 0 00-2.832-1.18zM34 15.994c0-.796-.235-1.574-.675-2.236a4.01 4.01 0 00-1.798-1.483 3.99 3.99 0 00-4.367.873 4.042 4.042 0 00-.869 4.387 4.02 4.02 0 001.476 1.806 3.993 3.993 0 002.226.678 4.003 4.003 0 002.832-1.18A4.04 4.04 0 0034 15.993z M5.007 11.969c-.793 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.807 4.042 4.042 0 00.869 4.386 4.001 4.001 0 004.366.873 4.011 4.011 0 001.798-1.483 4.038 4.038 0 00-.5-5.08 4.004 4.004 0 00-2.831-1.181z">
+                        </path>
+                      </svg><svg fill="#DD7A42" viewBox="0 0 35 32" xmlns="http://www.w3.org/2000/svg"
+                        class="block mx-auto h-8 w-8" style="display: none;">
+                        <path
+                          d="M15.258 26.865a4.043 4.043 0 01-1.133 2.917A4.006 4.006 0 0111.253 31a3.992 3.992 0 01-2.872-1.218 4.028 4.028 0 01-1.133-2.917c.009-.698.2-1.382.557-1.981.356-.6.863-1.094 1.47-1.433-.024.109.09-.055 0 0l1.86-1.652a8.495 8.495 0 002.304-5.793c0-2.926-1.711-5.901-4.17-7.457.094.055-.036-.094 0 0A3.952 3.952 0 017.8 7.116a3.975 3.975 0 01-.557-1.98 4.042 4.042 0 011.133-2.918A4.006 4.006 0 0111.247 1a3.99 3.99 0 012.872 1.218 4.025 4.025 0 011.133 2.917 8.521 8.521 0 002.347 5.832l.817.8c.326.285.668.551 1.024.798.621.33 1.142.826 1.504 1.431a3.902 3.902 0 01-1.504 5.442c.033-.067-.063.036 0 0a8.968 8.968 0 00-3.024 3.183 9.016 9.016 0 00-1.158 4.244zM19.741 5.123c0 .796.235 1.575.676 2.237a4.01 4.01 0 001.798 1.482 3.99 3.99 0 004.366-.873 4.042 4.042 0 00.869-4.386 4.02 4.02 0 00-1.476-1.806 3.994 3.994 0 00-5.058.501 4.038 4.038 0 00-1.175 2.845zM23.748 22.84c-.792 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.806 4.042 4.042 0 00.869 4.387 3.99 3.99 0 004.366.873A4.01 4.01 0 0027.08 29.1a4.039 4.039 0 00-.5-5.082 4 4 0 00-2.832-1.18zM34 15.994c0-.796-.235-1.574-.675-2.236a4.01 4.01 0 00-1.798-1.483 3.99 3.99 0 00-4.367.873 4.042 4.042 0 00-.869 4.387 4.02 4.02 0 001.476 1.806 3.993 3.993 0 002.226.678 4.003 4.003 0 002.832-1.18A4.04 4.04 0 0034 15.993z M5.007 11.969c-.793 0-1.567.236-2.226.678a4.021 4.021 0 00-1.476 1.807 4.042 4.042 0 00.869 4.386 4.001 4.001 0 004.366.873 4.011 4.011 0 001.798-1.483 4.038 4.038 0 00-.5-5.08 4.004 4.004 0 00-2.831-1.181z">
+                        </path>
+                      </svg>
+                      <div class="absolute right-0">
+                        <div
+                          class="inline-block items-center pl-4 py-2 pr-0 text-base font-medium rounded-md rounded-l-none text-indigo-600 relative">
+                          <div><button class="rounded-full flex items-center focus:outline-none text-indigo-600"><span
+                                class="sr-only">Open options</span><span title="us"
+                                class="flag-icon rounded-full mr-2 flag-icon-squared flag-icon-us"></span> Eng <svg
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="24px"
+                                height="24px" class="ml-2 w-5 h-5">
+                                <path fill-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clip-rule="evenodd"></path>
+                              </svg></button></div>
+                          <!---->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pb-32 bg-green-100 bg-red-200">
+            <header class="py-8">
+              <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-3xl font-bold text-white text-center text-green-600 text-red-600"><span> COVID-19
+                    negativ </span>
+                  <!---->
+                  <!---->
+                  <!---->
+                  <!---->
+                </h1>
+                <div class="mt-3"><span
+                    class="inline-flex items-center mr-2 px-3 py-0.5 rounded-md text-xs font-medium text-green-600  bg-green-200">
+                    Antigen-Schnelltest </span></div>
+              </div>
+            </header>
+          </div>
+          <main class="-mt-32">
+            <div class="max-w-xl mx-auto pb-6 px-4 sm:px-6 lg:px-8">
+              <div class="text-center bg-white rounded-lg shadow px-8 py-8 sm:px-8 items-center">
+                <div class="relative">
+                  <div class="white-circle"></div>
+                  <div class="{
+                &#39;green-circle&#39;: (item.result === &#39;negative&#39; || item.resultValue &gt;= 3000) &amp;&amp; isVerified &amp;&amp; !isExpired,
+                &#39;red-circle&#39;: (item.result === &#39;positive&#39; ||  item.resultValue &lt; 21.8) &amp;&amp; isVerified &amp;&amp; !isExpired,
+                &#39;indigo-circle&#39; : item.resultValue &gt; 1000 &amp;&amp; item.resultValue &lt; 3000,
+                &#39;orange-circle&#39; : item.resultValue &gt; 21.8 &amp;&amp; item.resultValue &lt; 1000,
+                &#39;gray-circle&#39;: !isVerified || isExpired,
+              }"></div>
+                  <div class="loader blasting-circle green red"></div>
+                  <div id="qr-field" style="padding-left: calc(50% - 110px);"></div>
+                </div>
+                <div id="date-field" class="text-4xl font-bold mt-6"> 06-03 / 10:55 </div>
+                <div id="name-field" class="text-lg mt-2"> Name Surname </div>
+                <!---->
+                <!---->
+                <div class="
+              text-sm
+              mt-4
+              mb-6
+              text-left
+              max-w-xs
+              mx-auto
+              rounded-md
+              py-3
+              px-4
+              pl-10
+              relative
+             bg-green-100 text-green-700"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#34D399"
+                    class="absolute left-3 top-3 w-5 h-5">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"></path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#F87171"
+                    class="absolute left-3 top-3 w-5 h-5" style="display: none;">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                      clip-rule="evenodd"></path>
+                  </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#999"
+                    class="absolute left-3 top-3 w-5 h-5" style="display: none;">
+                    <path fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                      clip-rule="evenodd"></path>
+                  </svg><span class="block font-medium mb-1"><span>Your test result is</span> negativ.</span><span
+                    class="block"> It is valid for <span id="valid-field">17:36:19. </span></span></div>
+                <div class="space-x-4"><button data-v-60e17834=""
+                    class="sm:col-start-1 mt-4 btn btn inline-flex items-center text-sm justify-center  cursor-pointer border border-gray-300 shadow-sm px-4 py-2 bg-white font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <div data-v-60e17834="" class="flex justify-center items-center" style="display: none;"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="animate-spin text-white -ml-1 mr-3 h-5 w-5">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25">
+                        </circle>
+                        <path fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          class="opacity-75"></path>
+                      </svg></div>
+                    <div data-v-60e17834="" class="inline-flex items-center justify-center"><svg data-v-60e17834=""
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="-ml-1 mr-2 h-5 w-5">
+                        <path data-v-60e17834="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1">
+                        </path>
+                      </svg> Corona-Warn-App <img data-v-60e17834=""
+                        src="data:image/png;base64,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"
+                        alt="🇪🇺" class="ml-2" style="width: 1.5em; display: inline;"></div>
+                  </button><button data-v-60e17834=""
+                    class="sm:col-start-1 mt-4 btn btn inline-flex items-center text-sm justify-center  cursor-pointer border border-gray-300 shadow-sm px-4 py-2 bg-white font-medium text-gray-700 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    <div data-v-60e17834="" class="flex justify-center items-center" style="display: none;"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        class="animate-spin text-white -ml-1 mr-3 h-5 w-5">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25">
+                        </circle>
+                        <path fill="currentColor"
+                          d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                          class="opacity-75"></path>
+                      </svg></div>
+                    <div data-v-60e17834="" class="inline-flex items-center justify-center"><svg data-v-60e17834=""
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="-ml-1 mr-2 h-5 w-5">
+                        <path data-v-60e17834="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1">
+                        </path>
+                      </svg> Luca App </div>
+                  </button></div>
+                <!---->
+                <dd>
+                  <div class="block"><a 
+                      href="#"
+                      type="button"
+                      class="text-sm font-medium mt-6 items-center inline-flex px-4 py-2 border border-transparent rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                      <!----><span>Offizielle Bescheinigung (DE/EN)</span>
+                    </a></div>
+                </dd>
+                <div class="mt-6"><a href="#"
+                    class="text-indigo-600 font-medium">Register a new appointment</a></div>
+              </div>
+            </div>
+            <!---->
+          </main>
+          <div class="fixed z-30 inset-0 overflow-y-auto sm:overflow-y-hidden" style="display: none;">
+            <div
+              class="flex items-start justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0 sm:overflow-y-auto z-20 sm:h-screen">
+              <div aria-hidden="true" class="fixed inset-0 transition-opacity" style="z-index: -10;">
+                <div class="fixed inset-0 bg-gray-500 opacity-75"></div>
+              </div><span aria-hidden="true" class="hidden sm:inline-block sm:align-middle sm:h-screen">​</span>
+              <div role="dialog" aria-modal="true" aria-labelledby="modal-headline"
+                class="w-full z-10 relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full px-4 pt-5 pb-4 sm:p-6">
+                <div class="sm:block fixed z-30 top-0 right-0 pt-4 pr-4"><button type="button"
+                    class="rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"><span
+                      class="sr-only">Close</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                      </path>
+                    </svg></button></div>
+                <div>
+                  <!---->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="fixed z-30 inset-0 overflow-y-auto sm:overflow-y-hidden" style="display: none;">
+            <div
+              class="flex items-start justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0 sm:overflow-y-auto z-20 sm:h-screen">
+              <div aria-hidden="true" class="fixed inset-0 transition-opacity" style="z-index: -10;">
+                <div class="fixed inset-0 bg-gray-500 opacity-75"></div>
+              </div><span aria-hidden="true" class="hidden sm:inline-block sm:align-middle sm:h-screen">​</span>
+              <div role="dialog" aria-modal="true" aria-labelledby="modal-headline"
+                class="w-full z-10 relative inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full px-4 pt-5 pb-4 sm:p-6">
+                <div class="sm:block fixed z-30 top-0 right-0 pt-4 pr-4"><button type="button"
+                    class="rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"><span
+                      class="sr-only">Close</span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" class="h-6 w-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                      </path>
+                    </svg></button></div>
+                <div>
+                  <h3 class="text-center font-medium text-lg mb-4"> Notes on data protection </h3>
+                  <div>
+                    <p>You* would like to use the Corona-Warn-App ("App") of the Robert Koch Institute ("RKI") to
+                      retrieve your test result of an antigen test. In order to retrieve your test result via the App,
+                      it is necessary that your test result is transmitted from the testing site to the server system of
+                      the RKI.<br>In short, this is done by the testing site storing your test result, linked to a
+                      machine-readable code, on a server of the RKI designated for this purpose. The code is your
+                      pseudonym, no further personal information is required to display the test result in the app.
+                      However, you can have the display of the test result personalized for you by specifying your name,
+                      first name and date of birth.<br> The code is formed from the intended time of the test and a
+                      random number. The formation of the code is done by calculating the aforementioned data with each
+                      other in such a way that a back-calculation of the data from the code is no longer possible.<br>
+                      You will receive a copy of the code in the representation of a QR code, which can be read into the
+                      app through the camera function of your smartphone. Alternatively, you can also receive the
+                      pseudonymous code as an Internet reference ("App Link"), which can be opened and processed by the
+                      app. This is the only way to link the test result with your app. With your consent, you can then
+                      retrieve your test result using the app. Your test result is automatically deleted from the server
+                      after 21 days. If you consent to the transmission of your pseudonymous test result by means of the
+                      code to the app infrastructure for the purpose of test retrieval, please confirm this to the
+                      testing center staff. You can revoke your consent at any time with effect for the future. Please
+                      note, however, that due to the existing pseudonymization, an assignment to your person cannot take
+                      place and therefore a deletion of your data will only take place automatically after the 21-day
+                      storage period has expired. Details on this can also be found in the "Data protection information"
+                      of the Corona-Warn-App of the RKI.</p>
+                    <p><small>* If you are younger than 16 years old, please discuss the use of the app with your
+                        parents or your custodial person.</small></p>.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+  </div>
+</body>
+
+<script src="./source/app.js"></script>
+
+</html>
